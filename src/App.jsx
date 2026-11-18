@@ -7,7 +7,7 @@ import Profile from "./pages/profile";
 import Register from "./pages/register";
 import ForgotPassword from "./pages/forgot_password.jsx";
 import Home from "./pages/home.jsx";
-
+import Cart from "./pages/cart.jsx";
 import "./App.css";
 
 function App() {
@@ -18,9 +18,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
-         <Route path="/login" element={<Login />} />
+        <Route path="/forgot_password" element={<ForgotPassword />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
-
     </BrowserRouter>
   );
 }

@@ -1,6 +1,4 @@
-
-import React from "react";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="zeit-footer">
@@ -47,13 +45,13 @@ function Footer() {
       </div>
 
       
-      <div className="footer-center">
-        <a href="/">Home</a>
-        <a href="#">Address</a>
-        <a href="#">Change</a>
-        <a href="#">Customer Support</a>
-        <a href="#">Call Zeit</a>
-      </div>
+    <div className="footer-center">
+  <Link to="/home">Home</Link>
+  <Link to="/cart">Cart</Link>
+  <Link to="/profile">My Account</Link>
+  <Link to="/support">Customer Support</Link>
+  <Link to="/contact">Contact</Link>
+</div>
 
      
       <div className="footer-right">

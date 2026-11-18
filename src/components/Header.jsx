@@ -11,7 +11,7 @@ function Header() {
     </Link>
 
     <nav className="nav">
-        <Link to="/">Home</Link>
+        <Link to="/home">Home</Link>
         <Link to="/cart">Cart 🛒</Link>
         <Link to="/profile">My Account</Link>
     </nav>
