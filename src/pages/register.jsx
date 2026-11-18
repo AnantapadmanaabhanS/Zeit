@@ -26,6 +26,18 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Phone number validation
+    if (!/^\d{10}$/.test(formData.phone)) {
+      alert("Please enter a valid 10-digit phone number.");
+      return;
+    }
+
+    // Password validation
+    if (formData.password.length < 6) {
+      alert("Password must be at least 6 characters long.");
+      return;
+    }
+
     console.log("Account details:", formData);
 
     alert("Account created successfully!");
