@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 /* ===== LOGIN PAGE ===== */
 
 .page {
@@ -15,11 +19,13 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    padding: 20px;
     font-family: Arial, sans-serif;
 }
 
 .login-container {
     width: 380px;
+    max-width: 100%;
     padding: 40px;
     background-color: #f9f9f9;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -38,12 +44,23 @@
     font-size: 20px;
 }
 
+.login-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
 .login-container input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
+}
+
+.login-container input:focus {
+    border-color: #078704;
 }
 
 .login-container button {
@@ -54,6 +71,31 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #006400;
+}
+
+.login-container a {
+    color: #078704;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.login-container p {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 /* ===== PROFILE PAGE ===== */
@@ -174,7 +216,6 @@
     background: #ffffff;
     padding: 25px 15px;
     font-family: Arial, sans-serif;
-    box-sizing: border-box;
 }
 
 .create-account-card {
@@ -184,7 +225,6 @@
     padding: 30px 40px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
 }
 
 .zeit-title {
@@ -219,7 +259,6 @@
     border: 1px solid #d0d0d0;
     border-radius: 6px;
     font-size: 13px;
-    box-sizing: border-box;
     outline: none;
     background: white;
 }
@@ -285,9 +324,92 @@
     background: #006400;
 }
 
+/* ===== FORGOT PASSWORD PAGE ===== */
+
+.forgot-password-container {
+    width: 380px;
+    max-width: 100%;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.forgot-password-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #078704;
+    font-size: 32px;
+}
+
+.forgot-password-container h2 {
+    margin-bottom: 20px;
+    color: #0f171a;
+    font-size: 20px;
+}
+
+.forgot-password-container h3 {
+    color: #078704;
+    margin-bottom: 20px;
+}
+
+.forgot-password-container p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.forgot-password-container input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.forgot-password-container input:focus {
+    border-color: #078704;
+}
+
+.forgot-password-container button {
+    width: 100%;
+    padding: 11px;
+    background-color: #078704;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forgot-password-container button:hover {
+    background-color: #006400;
+}
+
+.forgot-password-container a {
+    color: #078704;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password-container a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password-container .error {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
 /* ===== MOBILE RESPONSIVE ===== */
 
 @media (max-width: 768px) {
+
     .profile-page {
         flex-direction: column;
     }
@@ -312,7 +434,17 @@
 }
 
 @media (max-width: 480px) {
+
+    .login-container,
+    .forgot-password-container {
+        padding: 25px 22px;
+    }
+
     .create-account-card {
         padding: 25px 22px;
+    }
+
+    .profile-content {
+        padding: 25px 15px;
     }
 }
