@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 /* ===== COMMON STYLES ===== */
 
 * {
@@ -86,6 +87,41 @@
     align-items: center;
     overflow: hidden;
     position: relative;
+=======
+/* ============================= */
+/* PROFILE PAGE */
+/* ============================= */
+
+.profile-page {
+  display: flex;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.profile-sidebar {
+  width: 280px;
+  background: #f5faf5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  border-right: 1px solid #dcebdc;
+  position: relative;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #eaf6ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid green;
+>>>>>>> Stashed changes
 }
 
 .profile-photo img {
@@ -100,9 +136,8 @@
     font-size: 65px;
 }
 
-/* Logout Button */
-
 .logout-btn {
+<<<<<<< Updated upstream
     position: absolute;
     bottom: 40px;
     width: 180px;
@@ -118,6 +153,23 @@
 
 .logout-btn:hover {
     background: #dc2626;
+=======
+  position: absolute;
+  bottom: 40px;
+  width: 180px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: green;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #006400;
+>>>>>>> Stashed changes
 }
 
 .profile-content {
@@ -126,9 +178,15 @@
 }
 
 .profile-content h1 {
+<<<<<<< Updated upstream
     font-size: 30px;
     color: #1f2937;
     margin-bottom: 10px;
+=======
+  font-size: 30px;
+  color: green;
+  margin-bottom: 10px;
+>>>>>>> Stashed changes
 }
 
 .profile-subtitle {
@@ -144,6 +202,7 @@
 }
 
 .profile-field {
+<<<<<<< Updated upstream
     background: white;
     padding: 22px;
     border-radius: 10px;
@@ -155,6 +214,20 @@
     color: #6b7280;
     font-size: 14px;
     margin-bottom: 12px;
+=======
+  background: #fafffa;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #dcebdc;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.06);
+}
+
+.profile-field label {
+  display: block;
+  color: green;
+  font-size: 14px;
+  margin-bottom: 12px;
+>>>>>>> Stashed changes
 }
 
 .profile-field p {
@@ -164,7 +237,136 @@
     margin: 0;
 }
 
+<<<<<<< Updated upstream
 /* ===== RESPONSIVE DESIGN ===== */
+=======
+/* ============================= */
+/* CREATE ACCOUNT PAGE */
+/* ============================= */
+
+.create-account-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 25px 15px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.create-account-card {
+  width: 380px;
+  max-width: 100%;
+  background: #fafafa;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.zeit-title {
+  text-align: center;
+  color: green;
+  font-size: 32px;
+  margin: 5px 0 22px;
+}
+
+.create-account-card h2 {
+  font-size: 21px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.create-form-group {
+  margin-bottom: 14px;
+}
+
+.create-form-group label,
+.address-type-group > label {
+  display: block;
+  font-size: 14px;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.create-form-group input,
+.create-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  background: white;
+}
+
+.create-form-group input:focus,
+.create-form-group textarea:focus {
+  border-color: green;
+}
+
+.create-form-group textarea {
+  height: 65px;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+}
+
+.address-type-group {
+  margin-bottom: 20px;
+}
+
+.address-type-options {
+  display: flex;
+  gap: 8px;
+}
+
+.address-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 9px 5px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.address-option.selected {
+  border-color: green;
+  background: #eaf6ea;
+  color: green;
+}
+
+.address-option input {
+  accent-color: green;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 11px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirm-btn:hover {
+  background: #006400;
+}
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+>>>>>>> Stashed changes
 
 @media (max-width: 768px) {
     .profile-page {
@@ -188,4 +390,10 @@
     .profile-details {
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width: 480px) {
+  .create-account-card {
+    padding: 25px 22px;
+  }
 }
