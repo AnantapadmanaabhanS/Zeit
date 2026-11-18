@@ -49,8 +49,8 @@ function Footer() {
       
       <div className="footer-center">
         <a href="/">Home</a>
-        <a href="#">Address</a>
-        <a href="#">Change</a>
+        <a href="/cart">cart</a>
+        <a href="/profile">My account</a>
         <a href="#">Customer Support</a>
         <a href="#">Call Zeit</a>
       </div>

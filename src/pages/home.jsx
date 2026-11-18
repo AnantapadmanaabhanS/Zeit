@@ -1,15 +1,13 @@
+
+import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/footer";
 
 function Home() {
-    return (
-        <div id="home">
-            <Header />
-        </div>
-
-        function Home() {
   return (
-    <>
+    <div id="home">
       <Header />
+
       <section className="hero-banner">
         {/* Banner content */}
       </section>
@@ -21,10 +19,10 @@ function Home() {
       <section className="products-section">
         {/* Product cards */}
       </section>
-    </>
+
+      <Footer />
+    </div>
   );
-}
-    );
 }
 
 export default Home;
