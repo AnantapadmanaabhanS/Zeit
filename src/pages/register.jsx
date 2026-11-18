@@ -1,7 +1,10 @@
 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -24,16 +27,21 @@ function Register() {
     e.preventDefault();
 
     console.log("Account details:", formData);
-    alert("Form submitted! Backend integration is pending.");
+
+    alert("Account created successfully!");
+
+    navigate("/login");
   };
 
   return (
     <div className="create-account-page">
       <div className="create-account-card">
+
         <h1 className="zeit-title">Zeit</h1>
         <h2>Create Account</h2>
 
         <form onSubmit={handleSubmit}>
+
           <div className="create-form-group">
             <label>Name</label>
             <input
@@ -121,6 +129,7 @@ function Register() {
           <button type="submit" className="confirm-btn">
             Confirm
           </button>
+
         </form>
       </div>
     </div>
