@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
@@ -299,32 +298,6 @@ function Home() {
 
         </div>
     );
-=======
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/footer";
-
-function Home() {
-  return (
-    <div id="home">
-      <Header />
-
-      <section className="hero-banner">
-        {/* Banner content */}
-      </section>
-
-      <section className="category-section">
-        {/* Fruits and vegetables */}
-      </section>
-
-      <section className="products-section">
-        {/* Product cards */}
-      </section>
-
-      <Footer />
-    </div>
-  );
->>>>>>> 280891d150fef2004b6ace096c3139019001b1d5
 }
 
 export default Home;

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import jsPDF from "jspdf";
 
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 import "./Cart.css";
 
 function Cart() {

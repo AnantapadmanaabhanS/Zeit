@@ -45,7 +45,6 @@ function Footer() {
       </div>
 
       
-<<<<<<< HEAD
     <div className="footer-center">
   <Link to="/home">Home</Link>
   <Link to="/cart">Cart</Link>
@@ -53,15 +52,6 @@ function Footer() {
   <Link to="/support">Customer Support</Link>
   <Link to="/contact">Contact</Link>
 </div>
-=======
-      <div className="footer-center">
-        <a href="/">Home</a>
-        <a href="/cart">cart</a>
-        <a href="/profile">My account</a>
-        <a href="#">Customer Support</a>
-        <a href="#">Call Zeit</a>
-      </div>
->>>>>>> 280891d150fef2004b6ace096c3139019001b1d5
 
      
       <div className="footer-right">
