@@ -44,11 +44,19 @@ function Login() {
             />
 
             {error && <p className="error">{error}</p>}
-        
+            <p>
+                <Link to="/forgot_password">
+                Forgot Password?
+                </Link>
+            </p>
 
             <button type="submit">
                 Login
             </button>
+            <p>
+                Don't have an account?{" "}
+                <Link to="/register"> Register</Link>
+            </p>
 
             </form>
             </div>
